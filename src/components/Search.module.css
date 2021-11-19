@@ -1,0 +1,30 @@
+.container {
+    padding: 60px 60px 60px;
+    margin: 40px;
+    background-color: rgb(33, 120, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px gray;
+
+}
+.container p {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+.container input {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+
+}
+
+.container input::placeholder {
+    font-size: 1rem;
+}
