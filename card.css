@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+    margin: 20px;
+}
+
+body {
+    background: #999797;
+    background-size: 300% 300%;
+    color: rgb(80, 80, 80);
+    display: grid;
+    place-items: center;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+.circle {
+    position: absolute;
+    width: 400;
+    height: 00px;
+    background: rgb(255, 212, 35);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 212, 35, 1) 0%,
+        rgba(22, 194, 254, 1) 100%
+    );
+    border-radius: 50%;
+    left: 30%;
+    top: 20%;
+    z-index: -1;
+}
+.second {
+    top: unset;
+    right: 30%;
+    bottom: 20%;
+    left: unset;
+    background: rgb(49, 35, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(49, 35, 255, 1) 0%,
+        rgb(22, 169, 254) 100%
+    );
+    width: 300%;
+    height: 300%;
+}
+.card {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.67102591036414565) 0%,
+        rgba(255, 255, 255, 0.1085609243697479) 100%
+    );
+    border: 2px solid hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(8px);
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100%);
+    overflow: hidden;
+}
+h2 {
+    transform: translateZ(30px);
+}
+.chip {
+    width: 50px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.line {
+    background: rgb(80, 80, 80);
+    height: 24%;
+}
+.line:not(:nth-of-type(1)){
+    margin-top: 1px;
+}
+.number {
+    font-family: monospace;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.dates-and-logo {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #103369;
+    position: absolute;
+    right: 40px;
+    margin-top: -2.1rem;
+}
+.behind {
+    display: flex;
+}
+.qrsize {
+    width: 100px;
+    height: 100px;
+}

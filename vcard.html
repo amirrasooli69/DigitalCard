@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="index.css"> -->
+        <link rel="stylesheet" href="card.css">
+        <title>Digital Card</title>       
+    </head>
+    <body>
+        <div>
+            <div class="circle"></div>
+            <div class="circle second"></div>
+            <div class="card">
+                <h2 id="lblName">Name and Family</h2>
+                <br />
+                <!-- <img id="qr" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=" alt="vcard qr"> -->
+                <br />
+                <br />
+                <div id='lblEmail'>E-mail</div>
+            </div>
+        <!-- <h1>Javascript vCard generator with QR code</h1> -->
+        <!-- <p>This is made after reading about <a href="http://jumpscan.com/">JumpScan</a>, a dedicated QR code reader for contact information.</p> -->
+        <!-- <h2>Add data</h2> -->
+        <form action="" method="post">
+            <fieldset style="display: flex;">
+            <legend>You</legend>
+            <p><input type="text" name="first_name" size="40" placeholder="First name">&emsp;</p>
+            <p><input type="text" name="last_name" size="40" placeholder="Last name">&emsp;</p>
+            <p><input type="text" name="birthday" size="40" placeholder="Birthday">&emsp;</p>
+            <br />
+            <p><label>Gender</label><select name="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select></p>
+            </fieldset>
+    <fieldset">
+        <legend>Home</legend>
+        <div style="display: flex;">
+            <p><input type="text" name="home_email" size="20"placeholder="E-mail"><nbsp />&emsp;</p>
+            <p><input type="text" name="home_street" size="20" placeholder="Street and number">&emsp;</p>
+            <p><input type="text" name="home_city" size="20" placeholder="City">&emsp;</p>
+            <p><input type="text" name="home_region" size="20"placeholder="Postal code">&emsp;</p>
+        </div>
+        <br />
+        <div style="display: flex;">
+            <p><input type="text" name="home_post" size="20"placeholder="Region">&emsp;</p>
+            <p><input type="text" name="home_country" size="20"placeholder="Country">&emsp;</p>
+            <p><input type="text" name="home_tel" size="20"placeholder="Telephone">&emsp;</p>
+            <p><input type="text" name="home_url" size="20"placeholder="Website">&emsp;</p>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Work</legend>
+        <div style="display: flex;">
+            <p><input type="text" name="org_title" size="20"placeholder="Job title">&emsp;</p>
+            <p><input type="text" name="org_name" size="20" placeholder="Name">&emsp;</p>
+            <p><input type="text" name="org_street" size="20"placeholder="Street and number">&emsp;</p>
+            <p><input type="text" name="org_city" size="20"placeholder="City">&emsp;</p>
+            <p><input type="text" name="org_region" size="20"placeholder="Postal code">&emsp;</p>
+        </div>
+        <br />
+        <div style="display: flex;">
+            <p><input type="text" name="org_post" size=20" placeholder="Region">&emsp;</p>
+            <p><input type="text" name="org_country" size="20"placeholder="Country">&emsp;</p>
+            <p><input type="text" name="org_tel" size="20"placeholder="Telephone">&emsp;</p>
+            <p><input type="text" name="org_email" size="20"placeholder="E-mail">&emsp;</p>
+            <p><input type="text" name="org_url" size="20"placeholder="Website">&emsp;</p>
+        </div>
+    </fieldset>
+    <fieldset style="display: flex;">
+        <legend>Online services</legend>
+        <p><input type="text" name="facebook" size="20" value="http://www.facebook.com/" placeholder="Facebook">&emsp;</p>
+        <p><input type="text" name="twitter" size="20" value="http://www.twitter.com/" placeholder="Twitter">&emsp;</p>
+        <p><input type="text" name="Instagram" size="20" value="http://www.instagram.com/" placeholder="Instagram">&emsp;</p>
+        <p><input type="text" name="youtube" size="20" value="http://www.youtube.com/" placeholder="Youtube">&emsp;</p>
+        <!-- <p><label>Skype</label><input type="text" name="skype" size="40"></p> -->
+    </fieldset>
+    <div style="display: flex;">
+        <img id="qr" src="http://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=" alt="vcard qr">
+    </div>
+        <textarea name="vcard" cols="90" rows="20"></textarea>
+
+
+        <p><input type="button" name="submit" value="Generate"></p>
+
+    </form>
+    <script src="./index.js"></script>
+
+    <script>
+        
+    </script>
+   
+    </body>
+</html>
+
+
+
