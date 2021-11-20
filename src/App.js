@@ -7,13 +7,13 @@ import Cards from './components/Cards';
 import Search from './components/Search';
 import Logos from './components/Logos';
 import Footer from './components/Footer';
-import DigitalCard from './components/BuildCard';
+import BuildCard from './components/BuildCard';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <DigitalCard />
+        <BuildCard />
         <Navbar />
         <Banner />
         <Cards />
